@@ -1,0 +1,40 @@
+{
+  "name": "accessibility-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lyquix/accessibility-tests.git"
+  },
+  "author": "Lyquix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lyquix/accessibility-tests/issues"
+  },
+  "homepage": "https://github.com/Lyquix/accessibility-tests#readme",
+  "dependencies": {
+    "axe-core": "^4.10.3",
+    "axe-reports": "^1.1.11",
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
+    "crypto": "^1.0.1",
+    "cypress": "^14.2.1",
+    "cypress-axe": "^1.6.0",
+    "cypress-multi-reporters": "^2.0.5",
+    "json2csv": "^6.0.0-alpha.2",
+    "mkdirp": "^3.0.1",
+    "mocha": "^11.1.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "pa11y": "^8.0.0",
+    "pdf2html": "^3.1.0",
+    "puppeteer": "^24.6.1",
+    "readline": "^1.3.0",
+    "xml2js": "^0.6.2"
+  }
+}
