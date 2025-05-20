@@ -70,11 +70,10 @@ describe('Testing', () => {
 				});
 
 				it('Accessibility', () => {
-					cy.checkA11y(null, null, addToResultsLog);
 					cy.get('a, img, script, link').each(($el) => {
 						const href = $el.prop('href') || $el.prop('src');
 						if (href) {
-							const fileUrl = new URL(href, currentUrl).href;
+							const fileUrl = new URL(href, currentUrl).pathname;
 							if (fileUrl.toLowerCase().endsWith('.pdf') && !pdfUrls.some(e => e.pdf === fileUrl)) {
 								pdfUrls.push({ url: currentUrl, pdf: fileUrl });
 							}
@@ -86,6 +85,7 @@ describe('Testing', () => {
 							}
 						}
 					});
+					cy.checkA11y(null, null, addToResultsLog);
 				});
 
 				afterEach(() => {
